@@ -1,0 +1,37 @@
+.skills-section {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  background: transparent;
+  z-index: 2;
+}
+
+.skill-card {
+  background: rgba(25, 0, 50, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(200, 0, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.4);
+}
+
+.glowing-title {
+  color: #cc99ff;
+  text-shadow: 0 0 12px rgba(200, 0, 255, 0.7);
+}
+
+.skill-name {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border: 1px solid #ff80ff33;
+  cursor: pointer;
+}

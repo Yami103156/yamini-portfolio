@@ -1,0 +1,122 @@
+.education-section {
+  padding: 100px 20px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #e5d4ff;
+  margin-bottom: 60px;
+  text-shadow: 0 0 10px #a25aff;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 60px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.timeline-card {
+  background: rgba(30, 20, 40, 0.8);
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(180, 0, 255, 0.3);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(180, 0, 255, 0.5);
+}
+
+.edu-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.edu-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.edu-year,
+.edu-school,
+.edu-score,
+.edu-location {
+  color: #d4d4d4;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.highlight {
+  color: #c084fc;
+  font-weight: bold;
+}
+
+/* 🧪 Glowing line & dot */
+.connector-wrapper {
+  width: 120px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.glow-line {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #a855f7, #9333ea);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #9333ea, 0 0 20px #9333ea;
+  animation: pulse-line 3s ease-in-out infinite;
+}
+
+.moving-dot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  animation: move-dot 3s linear infinite;
+}
+
+@keyframes move-dot {
+  0% { left: 0; }
+  100% { left: 100%; }
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.4; }
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .connector-wrapper {
+    display: none;
+  }
+}

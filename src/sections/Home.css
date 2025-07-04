@@ -1,0 +1,217 @@
+/* RESET + DEEP SPACE BACKGROUND */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: radial-gradient(ellipse at bottom, #0d001f, #000) no-repeat;
+  font-family: 'Fira Code', monospace;
+  color: #fff;
+}
+
+.home-section {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0;
+}
+
+/* LIGHT FOLLOWER */
+.cursor-light {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(rgba(255, 255, 255, 0.07), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* VS CODE CARD */
+.vscode-box {
+  background-color: rgba(30, 30, 60, 0.95);
+  border-radius: 12px;
+  font-family: 'Fira Code', monospace;
+  padding: 1.5rem;
+  color: #eaeaea;
+  box-shadow: 0 0 25px rgba(128, 0, 255, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.vscode-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(255, 0, 255, 0.5);
+}
+
+.vscode-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.code-line {
+  font-size: 1rem;
+  color: #dcdcdc;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* CONNECT CARD */
+.connect-card {
+  background: rgba(40, 0, 60, 0.6);
+  border-radius: 12px;
+  color: #eee;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.15);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+.connect-card:hover {
+  box-shadow: 0 0 40px rgba(255, 0, 255, 0.3);
+}
+.text-glow {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  color: #ff00cc;
+  transform: scale(1.2);
+  text-shadow: 0 0 15px #fff;
+}
+
+/* EDITOR */
+.editor-container {
+  width: 100%;
+  max-width: 360px;
+  background: #1e1e2f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(180, 0, 255, 0.25);
+}
+.editor-tab {
+  background: #333;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.editor-window {
+  background: #1a1a2e;
+  padding: 18px;
+  color: #cfcfcf;
+  font-size: 0.85rem;
+  font-family: 'Fira Code', monospace;
+}
+
+/* AVATAR IMAGE */
+.image-glow-box {
+  margin-top: 24px;
+  padding: 10px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.07), transparent 60%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.25);
+}
+
+.avatar-ring {
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(45deg, #ff00cc, #330066);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 20px #c084fc;
+  transition: all 0.3s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Typing text */
+.typing-line {
+  font-family: 'Fira Code', monospace;
+  color: #dcb0ff;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+}
+
+/* ──────────────────────────── Responsive ──────────────────────────── */
+@media (max-width: 768px) {
+  .vscode-box,
+  .editor-container,
+  .connect-card {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .typing-line {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .image-glow-box {
+    margin-top: 1rem;
+  }
+
+  .cursor-light {
+    display: none;
+  }
+
+  .social-icons a {
+    font-size: 1.4rem;
+  }
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about-heading {
+  font-size: 1.25rem;
+  color: #ff80ff;
+  font-weight: 600;
+}
+
+.about-text {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,16 @@
+/* src/components/StarsCanvas.css */
+.stars-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;                /* ✅ behind all content */
+  pointer-events: none;       /* ✅ allow mouse clicks to pass through */
+}
+
+canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none !important;
+}
