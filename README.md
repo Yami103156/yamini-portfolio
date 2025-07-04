@@ -1,12 +1,31 @@
-# React + Vite
+# 🌐 Lotla Yamini – Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **personal developer portfolio** — a living, breathing representation of my journey as a Web Developer, AI enthusiast, and social-impact technologist. This portfolio is designed to be immersive, interactive, and genuinely _me_.
 
-Currently, two official plugins are available:
+🔗 **Live Site**: [yamini-portfolio.vercel.app](https://yamini-portfolio-oyq8e0nfj-yaminis-projects-6e57bee0.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 💫 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ **Framer Motion** animations for smooth transitions
+- 🌟 Dynamic **stars canvas** background with `@react-three/fiber`
+- 👩‍💻 Interactive VS Code–inspired code box for my intro
+- 📄 Downloadable Resume directly from homepage
+- 🧠 Minimal, creative, and professional UI/UX
+- 💬 Modular structure with clean, reusable components
+- 📱 Fully **responsive** for all devices
+
+---
+
+## 🛠 Tech Stack
+
+| Frontend | Animations | Assets | Deployment |
+|----------|------------|--------|------------|
+| `React.js` | `Framer Motion` | `React Icons` | `Vercel` |
+| `Vite` | `Three.js + @react-three/fiber` | `Custom Avatar UI` | `GitHub ` |
+| `Tailwind CSS` | `motion.div` | `Custom Cursor Light` | — |
+
+---
+
+
