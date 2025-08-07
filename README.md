@@ -2,8 +2,6 @@
 
 Welcome to my **personal developer portfolio** — a living, breathing representation of my journey as a Web Developer, AI enthusiast, and social-impact technologist. This portfolio is designed to be immersive, interactive, and genuinely _me_.
 
-🔗 **Live Site**: [yamini-portfolio.vercel.app](https://yamini-portfolio-pied.vercel.app/)
-
 ---
 
 ## 💫 Features
