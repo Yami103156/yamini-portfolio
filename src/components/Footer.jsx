@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-social-icons d-flex justify-content-center gap-4 mt-3">
           <a href="https://linkedin.com/in/lotla-yamini-4ab597301" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://github.com/Yami103156" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          <a href="https://leetcode.com/u/yamini123_/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
+          <a href="https://leetcode.com/u/yamiwhocares/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
           <a href="https://x.com/Yamidev103156?t=aQL3XmK5NftLYPcgtwBYJQ&s=08" target="_blank" rel="noopener noreferrer"><SiX /></a>
         </div>
 
